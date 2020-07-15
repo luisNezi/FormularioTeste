@@ -257,6 +257,7 @@
                 v-else
                 id="telefone"
                 class="form-control"
+                placeholder="(00) 00000-0000"
                 style="width: 80%"
                 :mask="['(##) ####-####', '(##) #####-####']"
                 v-model="form.resposta"
@@ -419,23 +420,17 @@ export default {
       this.btnList.splice(index, 1);
     },
     trataEvento(btn){
-      var preenchido = true;
       for (const formulario in this.formList) {
-        console.log(formulario)
-        console.log(this.formList[formulario].resposta)
         if(this.formList[formulario].obrigatorio && (
           this.formList[formulario].resposta === '' || this.formList[formulario].resposta === undefined)
         ){
-          alert("Existem Campos Obrigatórios não preenchidos")
-          preenchido = false;
+          return alert("Existem Campos Obrigatórios não preenchidos")
         }
       }
-      if(preenchido){
-        if(btn.funcao =='AbrirLink'){
-            window.open(btn.link, "_blank");  
-        }else{
-          this.$modal.show('dadosModal')
-        }
+      if(btn.funcao =='AbrirLink'){
+          window.open(btn.link, "_blank");  
+      }else{
+        this.$modal.show('dadosModal')
       }
     }
   }
