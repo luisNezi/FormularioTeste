@@ -184,8 +184,8 @@
                 width="90%" height="90%"
                 class="col"
               >
-              <input type="radio"  id="image1" v-model="imgFundo" value="https://images.unsplash.com/photo-1538991383142-36c4edeaffde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3902&q=80">
             </div>
+            <input type="radio" disabled  id="image1" v-model="imgFundo" value="https://images.unsplash.com/photo-1538991383142-36c4edeaffde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3902&q=80">
           </button>
           <button class="col  ml-3" style="border:1px solid black;width:25%;"
             @click.prevent="imgFundo 
@@ -196,8 +196,8 @@
                 width="90%" height="90%"
                 class="col"
               >
-              <input type="radio" id="image2" v-model="imgFundo" value="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80">
             </div>
+            <input type="radio" id="image2" disabled v-model="imgFundo" value="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80">
           </button>
           <button class="col ml-3" style="border:1px solid black;width:25%;"
             @click.prevent="imgFundo 
@@ -208,9 +208,9 @@
                 width="90%" height="90%"
                 class="col"
               >
-              <input type="radio" id="image3" 
-                v-model="imgFundo" value="https://images.unsplash.com/photo-1447966129673-88517d4367f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3775&q=80">
             </div>
+            <input type="radio" id="image3" disabled
+              v-model="imgFundo" value="https://images.unsplash.com/photo-1447966129673-88517d4367f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3775&q=80">
           </button>
         </div>
       </div>
