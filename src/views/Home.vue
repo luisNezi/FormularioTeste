@@ -321,6 +321,16 @@
           </div>
 
         </div>
+        <button
+          @click.prevent="$modal.hide('dadosModal')"
+          class="btn btn-success bg-green mt-2 p-2 mb-2"
+          style="margin: 0 auto;"
+          type="submit"
+        >
+          <span>
+            Ok
+          </span>
+        </button>
       </div>
     </v-modal>
 
